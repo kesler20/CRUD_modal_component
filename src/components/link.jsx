@@ -9,7 +9,7 @@ class Link extends Component {
       <a href={link.url} className="link-card">
         <div className="link">
           <img
-            src="https://dg8krxphbh767.cloudfront.net/exercises/hello-world.svg"
+            src="https://picsum.photos/200"
             alt="Icon for exercise called Hello World"
           />
           <div className="link-text">
