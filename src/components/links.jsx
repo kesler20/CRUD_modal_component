@@ -6,9 +6,9 @@ class Links extends Component {
   state = {
     linkCards: [
       {
-        title: "Github Account",
-        url: "https://github.com/kesler20",
-        description: "url to the github account",
+        title: "Sofia Commands",
+        url: "https://github.com/kesler20/Sofia/blob/master/Context/speaker.py",
+        description: "link for sofia's commands",
       },
       {
         title: "Blackboard",
@@ -54,6 +54,16 @@ class Links extends Component {
         title: "Google drive Group 7",
         url: "https://drive.google.com/drive/u/1/folders/0AF2F0Qdd4zDvUk9PVA",
         description: "link to group 7 drive",
+      },
+      {
+        title: "Sofia Diet",
+        url: "https://sofia-diet2.herokuapp.com/food",
+        description: "link to sofia diet",
+      },
+      {
+        title: "Configuration settings",
+        url: "https://github.com/kesler20/Config_settings",
+        description: "read this for some housekeeping",
       },
     ],
   };
