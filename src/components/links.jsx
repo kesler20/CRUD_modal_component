@@ -51,9 +51,9 @@ class Links extends Component {
         description: "this is the link to the gmail inbox",
       },
       {
-        title: "Google drive Group 7",
-        url: "https://drive.google.com/drive/u/1/folders/0AF2F0Qdd4zDvUk9PVA",
-        description: "link to group 7 drive",
+        title: "Reaction Engineering",
+        url: "https://vle.shef.ac.uk/ultra/courses/_96551_1/cl/outline",
+        description: "link to the reaction engineering blackboard",
       },
       {
         title: "Sofia Diet",
@@ -64,6 +64,26 @@ class Links extends Component {
         title: "Configuration settings",
         url: "https://github.com/kesler20/Config_settings",
         description: "read this for some housekeeping",
+      },
+      {
+        title: "Fogler",
+        url: "https://onedrive.live.com/?cid=D6E96D5E52A0D29C&id=D6E96D5E52A0D29C%21471419&parId=D6E96D5E52A0D29C%21104&o=OneUp",
+        description: "link to fogler textbook",
+      },
+      {
+        title: "Levenspiel",
+        url: "https://onedrive.live.com/?cid=D6E96D5E52A0D29C&id=D6E96D5E52A0D29C%21640274&parId=D6E96D5E52A0D29C%21104&o=OneUp",
+        description: "Link to levenspiel textbook",
+      },
+      {
+        title: "Reaction Engineering 2",
+        url: "https://vle.shef.ac.uk/ultra/courses/_96551_1/cl/outline",
+        description: "Link to the reaction engineering lectures",
+      },
+      {
+        title: "Reaction Engineering 1",
+        url: "https://vle.shef.ac.uk/ultra/courses/_90147_1/cl/outline",
+        description: "Link to the reaction engineering 1st year",
       },
     ],
   };
