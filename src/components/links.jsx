@@ -51,11 +51,6 @@ class Links extends Component {
         description: "this is the link to the gmail inbox",
       },
       {
-        title: "Reaction Engineering",
-        url: "https://vle.shef.ac.uk/ultra/courses/_96551_1/cl/outline",
-        description: "link to the reaction engineering blackboard",
-      },
-      {
         title: "Sofia Diet",
         url: "https://sofia-diet2.herokuapp.com/food",
         description: "link to sofia diet",
@@ -66,24 +61,9 @@ class Links extends Component {
         description: "read this for some housekeeping",
       },
       {
-        title: "Fogler",
-        url: "https://onedrive.live.com/?cid=D6E96D5E52A0D29C&id=D6E96D5E52A0D29C%21471419&parId=D6E96D5E52A0D29C%21104&o=OneUp",
-        description: "link to fogler textbook",
-      },
-      {
-        title: "Levenspiel",
-        url: "https://onedrive.live.com/?cid=D6E96D5E52A0D29C&id=D6E96D5E52A0D29C%21640274&parId=D6E96D5E52A0D29C%21104&o=OneUp",
-        description: "Link to levenspiel textbook",
-      },
-      {
-        title: "Reaction Engineering 2",
-        url: "https://vle.shef.ac.uk/ultra/courses/_96551_1/cl/outline",
-        description: "Link to the reaction engineering lectures",
-      },
-      {
-        title: "Reaction Engineering 1",
-        url: "https://vle.shef.ac.uk/ultra/courses/_90147_1/cl/outline",
-        description: "Link to the reaction engineering 1st year",
+        title: "Taskade Routine",
+        url: "https://www.taskade.com/spaces/sSKMNin2nRKmAb9V/subspaces/WEcFGfREnjKT24BZ",
+        description: "mind map of the learning outcomes",
       },
     ],
   };
