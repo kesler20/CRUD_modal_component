@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+a {
+    text-decoration: none;
+    outline: none;
+    text-emphasis: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.link__card {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+
+.link__card__content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.link__card__content__header {
+    font-weight: 600;
+    margin: 1%;
+    font-size: 1rem;
+    color: white;
+}
+
+
+.link__card__content__folder-icon {
+    width: 90%;
+    background-color: black;
+    height: 90%;
+}
+

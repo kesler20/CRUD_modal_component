@@ -1,14 +1,12 @@
-import "./App.css";
-import Links from "./components/links";
+import Links from "./containers/links/Links";
+import LinksCrud from "./containers/link_CRUD/LinksCrud";
 
 function App() {
   return (
-      <div className="container">
-        <div>
-          <h2 className="title">These are the links that you may want to use</h2>
-          <Links />
-        </div>
-      </div>
+    <div>
+      <Links />
+      <LinksCrud />
+    </div>
   );
 }
 
