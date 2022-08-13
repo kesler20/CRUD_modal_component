@@ -1,12 +1,13 @@
 import "./CreateLinkModal.css";
-import React ,{ useState } from "react";
+import React, { useState } from "react";
 
-const CreateLinkModal = ({handleSubmit}) => {
+const CreateLinkModal = ({ handleSubmit }) => {
   const [name, setTitle] = useState("Create Link");
   const [link, setLink] = useState("./#");
 
   const onSubmit = (e) => {
-    handleSubmit({ title: name, url: link })
+    e.preventDefault();
+    handleSubmit({ title: name, url: link });
   };
   return (
     <div className="modal__container">

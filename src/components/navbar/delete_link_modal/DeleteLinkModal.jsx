@@ -5,6 +5,7 @@ const DeleteLinkModal = ({ handleSubmit }) => {
   const [name, setTitle] = useState("Create Link");
 
   const onSubmit = (e) => {
+    e.preventDefault();
     handleSubmit(name);
   };
   return (
