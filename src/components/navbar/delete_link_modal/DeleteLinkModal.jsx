@@ -1,18 +1,17 @@
 import "./DeleteLinkModal.css";
 import React, { useState } from "react";
 
-const DeleteLinkModal = () => {
+const DeleteLinkModal = ({ handleSubmit }) => {
   const [name, setTitle] = useState("Create Link");
 
-  const handleSubmit = () => {
-    let currentLinks = JSON.parse(localStorage.getItem("link-cards"));
-    currentLinks = currentLinks.filter((link) => link.title !== name);
-    localStorage.setItem("link-cards", JSON.stringify(currentLinks));
+  const onSubmit = (e) => {
+    e.preventDefault();
+    handleSubmit(name);
   };
   return (
     <div className="modal__container">
       <div className="modal__card">
-        <form className="modal__card__form" onSubmit={handleSubmit}>
+        <form className="modal__card__form" onSubmit={(e) => onSubmit(e)}>
           <div className="modal__card__header">
             <div className="modal__card__badge--delete">
               <img

@@ -1,24 +1,32 @@
 import "./Navbar.css";
 import React, { useState } from "react";
-import CRUDBtn from "./crud_btn/CRUDBtn";
+
+import { BiDotsVerticalRounded } from "react-icons/bi";
 import { FaBars } from "react-icons/fa";
+
+import CRUDBtn from "./crud_btn/CRUDBtn";
 import CreateLinkModal from "./create_link_modal/CreateLinkModal";
 import DeleteLinkModal from "./delete_link_modal/DeleteLinkModal";
-import { BiDotsVerticalRounded } from "react-icons/bi";
 
-const Navbar = ({ handleCreate, handleDelete, onSortGrid }) => {
+const Navbar = ({ handleCreate, handleDelete }) => {
   const [viewCreateModal, setViewCreateModal] = useState(false);
   const [viewDeleteModal, setViewDeleteModal] = useState(false);
 
+  const onCreateLink = (link) => {
+    handleCreate(link);
+  };
+  const onDeleteLink = (name) => {
+    handleDelete(name);
+  };
+  
   const createLinkHook = () => {
-    handleCreate();
     setViewCreateModal(!viewCreateModal);
   };
 
   const deleteLinkHook = () => {
-    handleDelete();
     setViewDeleteModal(!viewDeleteModal);
   };
+
   return (
     <div className="navigation-bar">
       <div className="navigation-bar__btn">
@@ -26,14 +34,19 @@ const Navbar = ({ handleCreate, handleDelete, onSortGrid }) => {
           className="navigation-bar__btn__icon"
           onClick={deleteLinkHook}
         />
-        <BiDotsVerticalRounded
-          className="navigation-bar__btn__icon"
-          onClick={onSortGrid}
-        />
+        <BiDotsVerticalRounded className="navigation-bar__btn__icon" />
       </div>
       <CRUDBtn onCreate={createLinkHook} />
-      {viewCreateModal === true ? <CreateLinkModal /> : React.Fragment}
-      {viewDeleteModal === true ? <DeleteLinkModal /> : React.Fragment}
+      {viewCreateModal === true ? (
+        <CreateLinkModal handleSubmit={(link) => onCreateLink(link)} />
+      ) : (
+        React.Fragment
+      )}
+      {viewDeleteModal === true ? (
+        <DeleteLinkModal handleSubmit={(name) => onDeleteLink(name)} />
+      ) : (
+        React.Fragment
+      )}
     </div>
   );
 };

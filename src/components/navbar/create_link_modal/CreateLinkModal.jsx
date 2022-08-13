@@ -1,19 +1,18 @@
 import "./CreateLinkModal.css";
 import React ,{ useState } from "react";
 
-const CreateLinkModal = () => {
+const CreateLinkModal = ({handleSubmit}) => {
   const [name, setTitle] = useState("Create Link");
   const [link, setLink] = useState("./#");
 
-  const handleSubmit = () => {
-    let currentLinks = JSON.parse(localStorage.getItem("link-cards"));
-    currentLinks.push({ title: name, url: link });
-    localStorage.setItem("link-cards", JSON.stringify(currentLinks));
+  const onSubmit = (e) => {
+    e.preventDefault();
+    handleSubmit({ title: name, url: link })
   };
   return (
     <div className="modal__container">
       <div className="modal__card">
-        <form className="modal__card__form" onSubmit={handleSubmit}>
+        <form className="modal__card__form" onSubmit={(e) => onSubmit(e)}>
           <div className="modal__card__header">
             <div className="modal__card__badge--create">
               <img
