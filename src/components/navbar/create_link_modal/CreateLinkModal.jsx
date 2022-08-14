@@ -6,6 +6,7 @@ const CreateLinkModal = ({ handleSubmit }) => {
   const [link, setLink] = useState("./#");
 
   const onSubmit = (e) => {
+    e.preventDefault();
     handleSubmit({ title: name, url: link });
   };
   return (
