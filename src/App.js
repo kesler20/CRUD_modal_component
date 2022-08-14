@@ -17,7 +17,7 @@ const App = () => {
 
   const uploadInitialLinks = async () => {
     const response = await fetch(
-      "https://protocol-backend.herokuapp.com/router/CREATE",
+      "http://127.0.0.1:8000/router/CREATE",
       {
         method: "POST",
         body: JSON.stringify(initialLinkCards),
@@ -33,7 +33,7 @@ const App = () => {
 
   const getInitialLinks = async () => {
     const response = await fetch(
-      "https://protocol-backend.herokuapp.com/router/READ"
+      "http://127.0.0.1:8000/router/READ"
     );
     response.json().then((res) => {
       if (res.response.length === 0) {
@@ -47,7 +47,7 @@ const App = () => {
 
   const createLink = async (link) => {
     const response = await fetch(
-      "https://protocol-backend.herokuapp.com/router/UPLOAD",
+      "http://127.0.0.1:8000/router/UPLOAD",
       {
         method: "POST",
         body: JSON.stringify({ title: link.title, url: link.url }),
@@ -62,7 +62,7 @@ const App = () => {
   const deleteLink = async (name) => {
     console.log(name);
     const response = await fetch(
-      "https://protocol-backend.herokuapp.com/router/DELETE",
+      "http://127.0.0.1:8000/router/DELETE",
       {
         method: "POST",
         body: JSON.stringify(name),
