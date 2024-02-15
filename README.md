@@ -1,5 +1,5 @@
-**Url Map**
+**CRUD Modal Component**
 
-_this software can be used to navigate through urls more easily from any device_
+This is a card which I personally designed (modal component)
 
-The UI was inspired by https://exercism.org/tracks/rust/exercises
+![image](https://github.com/kesler20/CRUD_modal_component/assets/72452741/53c59cd0-b614-49e3-a565-fc7332f4c031)
